@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoeui.ttf">
+            <string>SegoeUI</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ObjectiveTypeQueTVCell" rowHeight="86" id="KGk-i7-Jjw" customClass="ObjectiveTypeQueTVCell" customModule="transLife" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio button_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="Er3-YB-TGc">
+                        <rect key="frame" x="48" y="29.5" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="Nma-Sd-VKO"/>
+                            <constraint firstAttribute="width" constant="27" id="XxG-UN-dZV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A. Very Accepting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VY9-Vr-CwX">
+                        <rect key="frame" x="81" y="33" width="116.5" height="20"/>
+                        <fontDescription key="fontDescription" name="SegoeUI" family="Segoe UI" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.21176470589999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="VY9-Vr-CwX" firstAttribute="centerY" secondItem="Er3-YB-TGc" secondAttribute="centerY" id="ODV-g6-LLD"/>
+                    <constraint firstItem="Er3-YB-TGc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pxg-9v-WCd"/>
+                    <constraint firstItem="VY9-Vr-CwX" firstAttribute="leading" secondItem="Er3-YB-TGc" secondAttribute="trailing" constant="6" id="RxQ-HM-McI"/>
+                    <constraint firstItem="Er3-YB-TGc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="huZ-HF-LGw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="OptionTextLbl" destination="VY9-Vr-CwX" id="3Xl-Fb-25C"/>
+                <outlet property="RadioImg" destination="Er3-YB-TGc" id="ewL-4r-7oc"/>
+            </connections>
+            <point key="canvasLocation" x="197.59999999999999" y="138.53073463268368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio button_unselected" width="28" height="28"/>
+    </resources>
+</document>

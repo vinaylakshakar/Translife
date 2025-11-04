@@ -1,0 +1,6 @@
+framework module Pods_transLife {
+  umbrella header "Pods-transLife-umbrella.h"
+
+  export *
+  module * { export * }
+}
